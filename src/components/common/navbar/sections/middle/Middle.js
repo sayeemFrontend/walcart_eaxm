@@ -1,10 +1,15 @@
-import React from "react";
-import { cart, logo, love, person } from "../../../../../assets";
+import React, { useState } from "react";
+import { cart, logo, love, menuBar, person } from "../../../../../assets";
+import { categories } from "../../../../../layout/data";
 import Button from "../../../../basic/button/Button";
 import Search from "../../../../basic/search-input/Search";
+import Modal from "../../../../modal/Modal";
+import Category from "../../../carts/category/Category";
+import ListView from "../../../list-view/ListView";
 import "./middle.css";
 
 export default function Middle() {
+  const [modal, setModal] = useState(true);
   return (
     <div className="middle flex flex-wrap  items-center justify-between">
       <img src={logo} alt="logo" />
@@ -44,6 +49,22 @@ export default function Middle() {
           <img src={cart} alt="cartIcon" />
         </div>
       </div>
+      <div
+        onClick={() => setModal(true)}
+        className="ml-auto mt-4 inline md:hidden cursor-pointer bg-primary opacity-70 hover:opacity-40 "
+      >
+        <img className="w-7 aspect-square " src={menuBar} alt="menu" />
+      </div>
+      {modal && (
+        <Modal onClose={() => setModal(false)}>
+          <div className="px-2 rounded-t-lg bg-secondary-light w-3/4 h-10 mx-auto ">
+            <Category />
+          </div>
+          <div className="w-3/4 mx-auto">
+            <ListView list={categories} />
+          </div>
+        </Modal>
+      )}
     </div>
   );
 }

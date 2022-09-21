@@ -1,0 +1,6 @@
+.list-view .parent > .children {
+  visibility: hidden;
+}
+.list-view .parent:hover > .children {
+  visibility: visible;
+}
