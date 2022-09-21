@@ -1,3 +1,17 @@
+# To run...
+
+1. clone or fetch the repository
+2. goto root directory (the directory containing "package.json")
+3. install the dependencies (cmd: npm install)
+4. run the project locally (cmd: npm run start || npm start)
+
+# check other version
+
+1. check the branch list (cmd: git branch)
+2. switch on the branch which want to run (cmd: git checkout branch_name)
+3. install the dependencies (if already exist, skip it)
+4. run project locally (cmd: npm run start)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

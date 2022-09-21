@@ -15,7 +15,7 @@ export default function Bottom() {
       <div className="px-2 rounded-t-lg bg-secondary w-52 h-14 hidden md:inline">
         <Category />
       </div>
-      <ul className="mx-4 mt-4 md:mt-0  flex-1 min-w-[270px] max-w-md text-primary-light text-sm">
+      <ul className="mx-4 mt-4 md:mt-0 hidden md:inline  flex-1 min-w-[270px] max-w-md text-primary-light text-sm">
         <div className="w-full flex flex-wrap items-center justify-between">
           {dataList?.map((it) =>
             !it.expandable ? (

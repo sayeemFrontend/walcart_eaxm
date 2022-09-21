@@ -9,7 +9,7 @@ import ListView from "../../../list-view/ListView";
 import "./middle.css";
 
 export default function Middle() {
-  const [modal, setModal] = useState(true);
+  const [modal, setModal] = useState(false);
   return (
     <div className="middle flex flex-wrap  items-center justify-between">
       <img src={logo} alt="logo" />
