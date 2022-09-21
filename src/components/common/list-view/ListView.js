@@ -6,7 +6,7 @@ export default function ListView({ list = [] }) {
   const parentRef = useRef();
 
   return (
-    <div className="list-view bg-inherit w-full z-10">
+    <div className="list-view bg-inherit w-full z-10 shadow-sm">
       {list?.map((it) => (
         <div
           ref={parentRef}
