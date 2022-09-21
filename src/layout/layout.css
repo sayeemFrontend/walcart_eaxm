@@ -1,0 +1,6 @@
+.layout .parent > .children {
+  visibility: hidden;
+}
+.layout .parent:hover > .children {
+  visibility: visible;
+}
