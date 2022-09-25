@@ -12,7 +12,7 @@ export default function Layout() {
     <div className="layout ">
       <div className=" container">
         <div className="flex flex-col md:flex-row">
-          <div className="w-52 bg-white pt-4 hidden md:inline">
+          <div className="w-56 bg-white pt-4 hidden md:inline">
             <ListView list={categories} />
           </div>
           <div className="pt-3 w-full  md:w-[calc(100%-30rem)] mx-auto">

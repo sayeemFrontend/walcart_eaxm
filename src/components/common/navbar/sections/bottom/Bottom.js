@@ -11,12 +11,12 @@ export default function Bottom() {
     { id: 4, title: "Headphone", expandable: false },
   ];
   return (
-    <div className="bottom flex flex-wrap  items-center">
-      <div className="px-2 rounded-t-lg bg-secondary w-52 h-14 hidden md:inline">
+    <div className="bottom flex flex-wrap  items-center justify-between">
+      <div className="px-2 rounded-t-lg bg-secondary w-56 h-14 hidden md:inline">
         <Category />
       </div>
-      <ul className="mx-4 mt-4 md:mt-0 hidden md:inline  flex-1 min-w-[270px] max-w-md text-primary-light text-sm">
-        <div className="w-full flex flex-wrap items-center justify-between">
+      <ul className="px-4 mt-4 md:mt-0 hidden md:inline flex-1  min-w-[270px] max-w-[40rem] text-primary-light text-sm">
+        <div className="w-full flex flex-wrap items-center justify-evenly">
           {dataList?.map((it) =>
             !it.expandable ? (
               <Link key={it.id}>{it.title}</Link>
@@ -30,7 +30,7 @@ export default function Bottom() {
         </div>
       </ul>
 
-      <div className="w-44 hidden  lg:flex items-center justify-between flex-wrap  mt-4 md:mt-0 ml-0 md:ml-auto ">
+      <div className="w-44 hidden  lg:flex items-center justify-between flex-wrap  mt-4 md:mt-0 ml-0 ">
         <img src={discount} alt="icon" />
         <p className="mx-2 text-[#FF4E53] text-base leading-4">
           <span className="opacity-50 text-xs text-primary-light">
