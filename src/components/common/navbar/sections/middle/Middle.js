@@ -28,7 +28,7 @@ export default function Middle() {
         </Search>
       </div>
 
-      <div className="w-64 flex items-center justify-between flex-wrap  mt-4 md:mt-0 ">
+      <div className="w-[18rem] flex items-center justify-between flex-wrap  mt-4 lg:mt-0 ">
         <div className="flex items-center">
           <img src={person} alt="icon" />
           <p className="ml-4 text-base text-primary-light">
